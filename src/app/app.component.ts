@@ -9,11 +9,14 @@ import locale from 'date-fns/locale/vi';
 })
 export class AppComponent {
   date: Date = new Date();
+  dateRange: Date = new Date();
+
   options: DatepickerOptions = {
     locale: locale,
-    selectRange: false,
+    selectRange: true,
     placeholder: 'dd/mm/yyyy',
   };
+
   demoChecked = false;
   demoCheckboxData = [
     { title: 'option 1', checked: false },
