@@ -1,35 +1,4 @@
 <div class="container">
-  <vnlp-header></vnlp-header>
-
-  <vnlp-suv-nav-vertical></vnlp-suv-nav-vertical>
-
-  <vnlp-avatar
-    [imgUrl]="
-      'https://nld.mediacdn.vn/thumb_w/600/2015/anonymous-1447907195159.jpg'
-    "
-    status="online"
-    class="p-2"
-  ></vnlp-avatar>
-
-  <vnlp-search></vnlp-search>
-
-  <vnlp-dropdown
-    [dropDownSettings]="dropdownSettings"
-    [label]="'Multiselect with drop'"
-    [data]="listData"
-    (valueChange)="getDropdownValue($event)"
-  ></vnlp-dropdown>
-  <div style="height: 400px"></div>
-
-  <vnlp-multiselect
-    [multiselectWidth]="'350px'"
-    [label]="'Multiselect'"
-    [multiEmail]="true"
-    (valueChange)="getMultiselectValue($event)"
-  ></vnlp-multiselect>
-  áđâsdá;ldka;sldk;lksa;lkd;lk
-  <div style="height: 30px"></div>
-  <vnlp-step-bar [currentStep]="3"></vnlp-step-bar>
   <div class="p-4">
     <vnlp-table
       [columns]="columns"
@@ -384,11 +353,7 @@
       (onChange)="handleBindingDataChange($event)"
     ></vnlp-switcher>
   </div>
-  <div class="p-4">
-    <vnlp-calendar [(ngModel)]="date" [options]="options"></vnlp-calendar>
-  </div>
 
-  <div style="height: 400px"></div>
   <div class="p-4 flex justify-between">
     <vnlp-radio-card
       description="Build, prototype and customize any design"
@@ -415,4 +380,61 @@
       (onChange)="handleBindingDataChange($event)"
     ></vnlp-file-uploader>
   </div>
+  <div class="p-4">
+    <vnlp-dividers type="Dividers 2x"></vnlp-dividers>
+    <p>Divider</p>
+  </div>
+
+  <div class="p-4">
+    <vnlp-chip-label></vnlp-chip-label>
+  </div>
+
+  <div class="p-4">
+    <vnlp-header></vnlp-header>
+  </div>
+
+  <div class="p-4">
+    <vnlp-suv-nav-vertical></vnlp-suv-nav-vertical>
+  </div>
+
+  <div class="p-4">
+    <vnlp-avatar
+      [imgUrl]="
+        'https://nld.mediacdn.vn/thumb_w/600/2015/anonymous-1447907195159.jpg'
+      "
+      status="online"
+    ></vnlp-avatar>
+  </div>
+
+  <div class="p-4">
+    <vnlp-search></vnlp-search>
+  </div>
+
+  <div class="p-4">
+    <vnlp-dropdown
+      [dropDownSettings]="dropdownSettings"
+      [label]="'Multiselect with drop'"
+      [data]="listData"
+      (valueChange)="getDropdownValue($event)"
+    ></vnlp-dropdown>
+  </div>
+
+  <div class="p-4">
+    <vnlp-multiselect
+      [multiselectWidth]="'350px'"
+      [label]="'Multiselect'"
+      [multiEmail]="true"
+      (valueChange)="getMultiselectValue($event)"
+    ></vnlp-multiselect>
+  </div>
+
+  <div class="p-4">
+    <vnlp-step-bar [currentStep]="3"></vnlp-step-bar>
+  </div>
+
+  <div class="p-4">
+    <vnlp-calendar [(ngModel)]="date" [options]="options"></vnlp-calendar>
+  </div>
+
+  <div style="height: 400px"></div>
 </div>

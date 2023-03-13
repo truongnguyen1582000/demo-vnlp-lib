@@ -18,7 +18,7 @@
     "@angular/platform-browser": "^14.2.0",
     "@angular/platform-browser-dynamic": "^14.2.0",
     "@angular/router": "^14.2.0",
-    "@em-and-ai/ui-sdk": "0.0.6",
+    "@em-and-ai/ui-sdk": "0.0.7",
     "date-fns": "^2.29.3",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
