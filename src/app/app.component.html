@@ -398,9 +398,10 @@
       (onChange)="handleBindingDataChange($event)"
     ></vnlp-file-uploader>
   </div>
+
   <div class="p-4">
-    <vnlp-dividers type="Dividers 2x"></vnlp-dividers>
     <p>Divider</p>
+    <vnlp-dividers type="Dividers 2x"></vnlp-dividers>
   </div>
 
   <div class="p-4">
@@ -425,61 +426,60 @@
       <vnlp-chip-label [type]="3" [style]="'icon text'"></vnlp-chip-label>
       <vnlp-chip-label [type]="3" [style]="'with image'"></vnlp-chip-label>
     </div>
-
-    <vnlp-header></vnlp-header>
-
-    <vnlp-suv-nav-vertical></vnlp-suv-nav-vertical>
-
-    <div class="p-4">
-      <vnlp-avatar
-        [imgUrl]="
-          'https://nld.mediacdn.vn/thumb_w/600/2015/anonymous-1447907195159.jpg'
-        "
-        status="online"
-      ></vnlp-avatar>
-    </div>
-
-    <div class="p-4">
-      <vnlp-search></vnlp-search>
-    </div>
-
-    <div class="p-4">
-      <vnlp-dropdown
-        [dropDownSettings]="dropdownSettings"
-        [label]="'Multiselect with drop'"
-        [data]="listData"
-        (valueChange)="getDropdownValue($event)"
-      ></vnlp-dropdown>
-    </div>
-
-    <div class="p-4">
-      <vnlp-multiselect
-        [multiselectWidth]="'350px'"
-        [label]="'Multiselect'"
-        [multiEmail]="true"
-        (valueChange)="getMultiselectValue($event)"
-      ></vnlp-multiselect>
-    </div>
-
-    <div class="p-4">
-      <vnlp-step-bar [currentStep]="3"></vnlp-step-bar>
-    </div>
-
-    <div class="p-4">
-      <vnlp-breadcrumb></vnlp-breadcrumb>
-    </div>
-
-    <div class="p-4">
-      <vnlp-calendar [(ngModel)]="date" [options]="options"></vnlp-calendar>
-    </div>
-
-    <div class="p-4">
-      <vnlp-calendar
-        [(ngModel)]="dateRange"
-        [options]="optionsRange"
-      ></vnlp-calendar>
-    </div>
-
-    <div style="height: 400px"></div>
   </div>
+
+  <vnlp-header></vnlp-header>
+  <vnlp-suv-nav-vertical></vnlp-suv-nav-vertical>
+
+  <div class="p-4">
+    <vnlp-avatar
+      [imgUrl]="
+        'https://nld.mediacdn.vn/thumb_w/600/2015/anonymous-1447907195159.jpg'
+      "
+      status="online"
+    ></vnlp-avatar>
+  </div>
+
+  <div class="p-4">
+    <vnlp-search></vnlp-search>
+  </div>
+
+  <div class="p-4">
+    <vnlp-dropdown
+      [dropDownSettings]="dropdownSettings"
+      [label]="'Multiselect with drop'"
+      [data]="listData"
+      (valueChange)="getDropdownValue($event)"
+    ></vnlp-dropdown>
+  </div>
+
+  <div class="p-4">
+    <vnlp-multiselect
+      [multiselectWidth]="'350px'"
+      [label]="'Multiselect'"
+      [multiEmail]="true"
+      (valueChange)="getMultiselectValue($event)"
+    ></vnlp-multiselect>
+  </div>
+
+  <div class="p-4">
+    <vnlp-step-bar [currentStep]="3"></vnlp-step-bar>
+  </div>
+
+  <div class="p-4">
+    <vnlp-breadcrumb></vnlp-breadcrumb>
+  </div>
+
+  <div class="p-4">
+    <vnlp-calendar [(ngModel)]="date" [options]="options"></vnlp-calendar>
+  </div>
+
+  <div class="p-4">
+    <vnlp-calendar
+      [(ngModel)]="dateRange"
+      [options]="optionsRange"
+    ></vnlp-calendar>
+  </div>
+
+  <div style="height: 400px"></div>
 </div>

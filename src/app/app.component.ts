@@ -131,7 +131,6 @@ export class AppComponent {
     { id: 10, value: 'Techsmith', isSelected: false },
   ];
 
-  dateRange: Date = new Date();
   optionsRange: DatepickerOptions = {
     locale: locale,
     selectRange: true,
