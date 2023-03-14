@@ -29,6 +29,7 @@ import { VnlpDropdownModule } from '@em-and-ai/ui-sdk/vnlp-dropdown';
 import { VnlpMultiselectModule } from '@em-and-ai/ui-sdk/vnlp-multiselect';
 import { VnlpDividersModule } from '@em-and-ai/ui-sdk/vnlp-dividers';
 import { VnlpChipLabelModule } from '@em-and-ai/ui-sdk/vnlp-chip-label';
+import { VnlpBreadcrumbModule } from '@em-and-ai/ui-sdk/vnlp-breadcrumb';
 
 @NgModule({
   declarations: [AppComponent],
@@ -60,6 +61,7 @@ import { VnlpChipLabelModule } from '@em-and-ai/ui-sdk/vnlp-chip-label';
     VnlpMultiselectModule,
     VnlpDividersModule,
     VnlpChipLabelModule,
+    VnlpBreadcrumbModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

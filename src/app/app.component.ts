@@ -92,8 +92,20 @@ export class AppComponent {
   ];
 
   switcherList = [
-    { title: 'Section 1', icon: 'design-grid-filled', key: 'key1' },
-    { title: 'Section 2', icon: 'pen-line', key: 'key2' },
+    { title: 'Section 1', icon: 'lamp-slash-linear', key: 'key1' },
+    { title: 'Section 2', icon: 'lovely-linear', key: 'key2' },
+  ];
+
+  switcherListIcon = [
+    { title: '', icon: 'lamp-slash-linear', key: 'key1' },
+    { title: '', icon: 'lovely-linear', key: 'key2' },
+  ];
+
+  switcherListLong = [
+    { title: 'Section 1', icon: 'lamp-slash-linear', key: 'key1' },
+    { title: 'Section 2', icon: 'lovely-linear', key: 'key2' },
+    { title: 'Section 1', icon: 'lamp-slash-linear', key: 'key3' },
+    { title: 'Section 1', icon: 'lamp-slash-linear', key: 'key1' },
   ];
 
   handleBindingDataChange(data: any) {
@@ -104,17 +116,23 @@ export class AppComponent {
     console.log(data);
   }
   listData = [
-    { id: 1, value: 'Codecademy' },
-    { id: 2, value: 'Coursera' },
-    { id: 3, value: 'Khan Academy' },
-    { id: 4, value: 'LinkedIn Learning' },
-    { id: 5, value: 'Open Culture' },
-    { id: 6, value: 'Sophia' },
-    { id: 7, value: 'Teacher Training Videos' },
-    { id: 8, value: 'Udemy' },
-    { id: 9, value: 'Virtual Nerd Mobile Math' },
-    { id: 10, value: 'Techsmith' },
+    { id: 1, value: 'Codecademy', isSelected: true },
+    { id: 2, value: 'Coursera', isSelected: false },
+    { id: 3, value: 'Khan Academy', isSelected: false },
+    { id: 4, value: 'LinkedIn Learning', isSelected: false },
+    { id: 5, value: 'Open Culture', isSelected: true },
+    { id: 6, value: 'Sophia', isSelected: true },
+    { id: 7, value: 'Teacher Training Videos', isSelected: false },
+    { id: 8, value: 'Udemy', isSelected: true },
+    { id: 9, value: 'Virtual Nerd Mobile Math', isSelected: false },
+    { id: 10, value: 'Techsmith', isSelected: false },
   ];
+
+  dateRange: Date = new Date();
+  optionsRange: DatepickerOptions = {
+    locale: locale,
+    selectRange: true,
+  };
 
   dropdownSettings = {
     singleSelection: false,
