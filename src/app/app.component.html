@@ -80,7 +80,8 @@
           title="Create virtual agent"
           icon="music-library-2-linear"
           [disabled]="true"
-        ></vnlp-button>
+        >
+        </vnlp-button>
       </div>
       <div class="flex flex-col justify-between">
         <vnlp-button
@@ -95,7 +96,8 @@
           icon="music-library-2-linear"
           iconPosition="right"
           [disabled]="true"
-        ></vnlp-button>
+        >
+        </vnlp-button>
       </div>
       <br />
     </div>
@@ -135,7 +137,8 @@
           icon="music-library-2-linear"
           iconPosition="right"
           [disabled]="true"
-        ></vnlp-button>
+        >
+        </vnlp-button>
       </div>
       <br />
     </div>
@@ -204,7 +207,8 @@
       [(checked)]="demoChecked"
       label="Checkbox 1"
       (onChange)="handleBindingDataChange($event)"
-    ></vnlp-checkbox>
+    >
+    </vnlp-checkbox>
     <vnlp-checkbox
       label="Checkbox 2"
       [disabled]="true"
@@ -250,7 +254,8 @@
       [disabled]="true"
       labelPosition="left"
       label="Switch 2 disabled"
-    ></vnlp-switch>
+    >
+    </vnlp-switch>
   </div>
 
   <!-- vnlp-textarea -->
@@ -285,7 +290,8 @@
       description="Hỗ trợ khách hàng mua bán bất động sản ở ven biển"
       labelText="AI Voicebot"
       labelType="blue"
-    ></vnlp-create-virtual-agent>
+    >
+    </vnlp-create-virtual-agent>
     <vnlp-create-virtual-agent
       mode="show"
       title="Dự án bất động sản"
@@ -334,7 +340,8 @@
       name="tickbox"
       (onChange)="handleBindingDataChange($event)"
       [(checked)]="demoSwitch"
-    ></vnlp-tickbox>
+    >
+    </vnlp-tickbox>
     <vnlp-tickbox label="option 2" [disabled]="true"></vnlp-tickbox>
     <vnlp-tickbox
       labelPosition="left"
@@ -357,19 +364,22 @@
       [switcherList]="switcherList"
       selected="key1"
       (onChange)="handleBindingDataChange($event)"
-    ></vnlp-switcher>
+    >
+    </vnlp-switcher>
     <br />
     <vnlp-switcher
       [switcherList]="switcherListIcon"
       selected="key1"
       (onChange)="handleBindingDataChange($event)"
-    ></vnlp-switcher>
+    >
+    </vnlp-switcher>
     <br />
     <vnlp-switcher
       [switcherList]="switcherListLong"
       selected="key1"
       (onChange)="handleBindingDataChange($event)"
-    ></vnlp-switcher>
+    >
+    </vnlp-switcher>
   </div>
 
   <div class="p-4 flex justify-between">
@@ -377,7 +387,8 @@
       description="Build, prototype and customize any design"
       labelPosition="left"
       [checked]="true"
-    ></vnlp-radio-card>
+    >
+    </vnlp-radio-card>
     <vnlp-radio-card
       [disabled]="true"
       [checked]="false"
@@ -428,8 +439,25 @@
     </div>
   </div>
 
-  <vnlp-header></vnlp-header>
-  <vnlp-suv-nav-vertical></vnlp-suv-nav-vertical>
+  <div class="flex h-[100vh] w-[100%] overflow-hidden">
+    <!-- Sidebar -->
+    <vnlp-suv-nav-vertical></vnlp-suv-nav-vertical>
+
+    <div class="grid flex-grow content-start bg-success-200">
+      <!-- Header -->
+      <div class="relative h-[60px]">
+        <vnlp-header class="absolute w-[100%]"></vnlp-header>
+      </div>
+      <!-- main content -->
+      <div class="overflow-auto scrollbar-hide"></div>
+
+      <!-- footer -->
+      <!-- <app-footer></app-footer> -->
+
+      <!-- Bottom bar -->
+      <!-- <app-bottom-navbar></app-bottom-navbar> -->
+    </div>
+  </div>
 
   <div class="p-4">
     <vnlp-avatar
